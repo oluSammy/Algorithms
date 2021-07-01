@@ -113,7 +113,7 @@ let list = new LinkedList();
 list.prepend(0);
 list.append(2);
 list.append(3);
-console.log(list);
+// console.log(list);
 console.log(list.searchNode(2));
 console.log(list.deleteNode(3));
 console.log(list);

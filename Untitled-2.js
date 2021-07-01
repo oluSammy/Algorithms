@@ -47,43 +47,53 @@
 //     return oldHead.value;
 //   }
 
-//   deleteTail() {
-//     if (!this.tail) return null;
+//   // deleteTail() {
+//   //   if (!this.tail) return null;
 
-//     let oldTail = this.tail;
-//     if (this.head === this.tail) {
-//       this.tail = null;
-//       this.head = null;
-//     } else {
-//       this.tail = oldTail.prev;
-//     }
-//     return oldTail.value;
-//   }
+//   //   let currentNode = this.head;
 
-//   findNode(value) {
-//     let currentNode = this.head;
+//   //   while (currentNode) {
+//   //     if (currentNode.next === this.tail) {
+//   //       currentNode = this.tail;
+//   //       currentNode.next = null;
+//   //     } else {
+//   //       currentNode === currentNode.next
+//   //     }
+//   //   }
 
-//     while (currentNode) {
-//       if (currentNode.value === value) {
-//         return currentNode.value;
-//       }
-//       currentNode = currentNode.next;
-//     }
-//     return null;
-//   }
+//   //   return 1
+
+//   //   // let oldTail = this.tail;
+//   //   // if (this.head === this.tail) {
+//   //   //   this.tail = null;
+//   //   //   this.head = null;
+//   //   // } else {
+//   //   //   this.tail = oldTail.prev;
+//   //   // }
+//   //   // return oldTail.value;
+//   // }
+
+//   // findNode(value) {
+//   //   let currentNode = this.head;
+
+//   //   while (currentNode) {
+//   //     if (currentNode.value === value) {
+//   //       return currentNode.value;
+//   //     }
+//   //     currentNode = currentNode.next;
+//   //   }
+//   //   return null;
+//   // }
 
 //   deleteNode(value) {
 //     let currentNode = this.head;
-//     let prevNode;
+//     let prevNode = {}
 
 //     while (currentNode) {
-//       if (this.head.value === value) {
-//         this.deleteHead();
-//         return;
-//       } else if (this.tail.value === value) {
-//         this.deleteTail();
-//         return;
-//       } else if (currentNode.value === value) {
+//       if (currentNode.value === value) {
+//         if (currentNode === this.head) {
+
+//         }
 //         prevNode.next = currentNode.next;
 //       }
 //       prevNode = currentNode;
@@ -93,9 +103,11 @@
 // }
 
 // const list = new LinkedList();
-// list.append(1);
+// list.append(3);
 // list.prepend(0);
 // list.prepend(-1);
-// list.append(3);
+// // list.deleteNode(-1)
+// // list.deleteTail()
+// // list.append(3);
 // console.log(list);
 // // list.prepend(0);
